@@ -1,22 +1,12 @@
-import { View, Text, StyleSheet } from 'react-native';
-import { H1 } from 'tamagui';
+import { H1, Theme } from 'tamagui';
 
-import { Button } from '~/components/Button';
-import { ScreenContent } from '~/components/ScreenContent';
+import { Button, Main } from '~/tamagui.config';
 
 export default function Tab() {
   return (
-    <ScreenContent title="asdsadsad" path="/asd">
-      <Button title="asddsa" />
+    <Main>
+      <Button>asdasd</Button>
       <H1>sdasdsad</H1>
-    </ScreenContent>
+    </Main>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   },
-// });

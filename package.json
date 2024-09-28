@@ -8,13 +8,15 @@
     "start": "expo start",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
     "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "generate-themes": "tamagui generate-themes ./theme-builder.ts ./theme-output.ts"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-navigation/native": "^6.1.7",
     "@supabase/supabase-js": "^2.38.4",
+    "@tamagui/cli": "^1.112.3",
     "@tamagui/font-inter": "1.74.8",
     "@tamagui/react-native-media-driver": "1.74.8",
     "@tamagui/shorthands": "1.74.8",

@@ -3,6 +3,7 @@ import { createInterFont } from '@tamagui/font-inter';
 import { createMedia } from '@tamagui/react-native-media-driver';
 import { shorthands } from '@tamagui/shorthands';
 import { themes, tokens } from '@tamagui/themes';
+import { light } from '@tamagui/themes/types/generated-new';
 import { createTamagui, styled, SizableText, H1, YStack, Button as ButtonTamagui } from 'tamagui';
 
 const animations = createAnimations({
@@ -38,10 +39,11 @@ export const Main = styled(YStack, {
   flex: 1,
   justifyContent: 'space-between',
   maxWidth: 960,
+  backgroundColor: '#1a1a1a',
 });
 
 export const Title = styled(H1, {
-  color: '#000',
+  color: '#eeeeee',
   size: '$12',
 });
 
@@ -51,13 +53,13 @@ export const Subtitle = styled(SizableText, {
 });
 
 export const Button = styled(ButtonTamagui, {
-  backgroundColor: '#6366F1',
-  borderRadius: 28,
+  backgroundColor: '#008f83',
+  borderRadius: 12,
   hoverStyle: {
-    backgroundColor: '#5a5fcf',
+    backgroundColor: '#11b6a8',
   },
   pressStyle: {
-    backgroundColor: '#5a5fcf',
+    backgroundColor: '#11b6a8',
   },
   maxWidth: 500,
 
@@ -71,16 +73,22 @@ export const Button = styled(ButtonTamagui, {
   shadowRadius: 3.84,
 
   // Button text
-  color: '#FFFFFF',
-  fontWeight: '600', // Is not passed down to the text. Probably a bug in Tamagui: https://github.com/tamagui/tamagui/issues/1156#issuecomment-1802594930
+  color: '#eeeeee',
+  fontWeight: '800', // Is not passed down to the text. Probably a bug in Tamagui: https://github.com/tamagui/tamagui/issues/1156#issuecomment-1802594930
   fontSize: 16,
 });
 
 const config = createTamagui({
   light: {
     color: {
-      background: 'gray',
-      text: 'black',
+      background: '#ededed',
+      text: '#000000',
+    },
+  },
+  dark: {
+    color: {
+      background: '#1f1f1f',
+      text: '#ffffff',
     },
   },
   defaultFont: 'body',
